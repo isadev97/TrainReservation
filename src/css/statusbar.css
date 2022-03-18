@@ -1,0 +1,19 @@
+.status-bar-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.status-bar-row-total {
+    color: blue;
+}
+
+.status-bar-row-reserved {
+    color: red;
+}
+
+.status-bar-row-vacant {
+    color: green;
+}

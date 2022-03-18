@@ -1,0 +1,9 @@
+.seat-matrix {
+    display: flex;
+    flex-direction: column;
+}
+
+.seat-marix-row {
+    display: flex;
+    flex-direction: row;
+}
