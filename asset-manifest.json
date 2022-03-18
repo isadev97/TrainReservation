@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/train-reservation-app/static/css/main.eec8473d.css",
+    "main.js": "/train-reservation-app/static/js/main.d2b6ff02.js",
+    "static/js/787.e15de406.chunk.js": "/train-reservation-app/static/js/787.e15de406.chunk.js",
+    "index.html": "/train-reservation-app/index.html",
+    "main.eec8473d.css.map": "/train-reservation-app/static/css/main.eec8473d.css.map",
+    "main.d2b6ff02.js.map": "/train-reservation-app/static/js/main.d2b6ff02.js.map",
+    "787.e15de406.chunk.js.map": "/train-reservation-app/static/js/787.e15de406.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eec8473d.css",
+    "static/js/main.d2b6ff02.js"
+  ]
+}
