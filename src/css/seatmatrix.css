@@ -1,9 +1,18 @@
 .seat-matrix {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.seat-marix-row {
-    display: flex;
-    flex-direction: row;
+.seat-matrix-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.seat-matrix-element {
+  flex-basis: 14%;
+  margin: 1rem;
+  padding: 1rem;
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
 }

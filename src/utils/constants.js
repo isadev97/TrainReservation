@@ -18,3 +18,6 @@ export const RESERVED_SEAT = "R";
 
 export const VACANT_SEAT = "V";
 
+export const RESERVED_SEAT_BG_COLOR = "#dc3545";
+
+export const VACANT_SEAT_BG_COLOR = "#198754";

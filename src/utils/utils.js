@@ -11,9 +11,9 @@ This function will fill a seat with a random value either reserved or vacant
 */
 const fillASeatWithRandomValue = () => {
   const x = Math.floor(Math.random() * 2);
-  if (x == 0) {
+  if (x === 0) {
     return VACANT_SEAT;
-  } else if (x == 1) {
+  } else if (x === 1) {
     return RESERVED_SEAT;
   }
 };
@@ -53,4 +53,17 @@ export const generateTrainRows = () => {
   }
   seatMatrix.push(lastRow);
   return [seatMatrix, reservedSeatCount, vacantSeatCount];
+};
+
+export const getCloneMatrix = (currentArray) => {
+  var newArray = [];
+
+  for (var i = 0; i < currentArray.length; i++)
+    newArray[i] = currentArray[i].slice();
+
+  return newArray;
+};
+
+export const getCountOfSeatsInARow = (row, val) => {
+  return [...row].filter((x) => x === val).length;
 };
