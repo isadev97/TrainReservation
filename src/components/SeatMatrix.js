@@ -12,7 +12,8 @@ React component to show seat matrix UI
 function SeatMatrixUi({ seats }) {
   return (
     <>
-    <h1>Train Seat Matrix</h1>
+    <hr />
+    <h6>Train Seat Matrix</h6>
     <div className="seat-matrix">
       {seats.map((row, i) => (
         <div key={i} className="seat-matrix-row">
