@@ -8,7 +8,7 @@ function SeatsBooked({ isBooked, seatsBooked, handleBookAgain }) {
     <div className="seat-booked-container">
       {isBooked && (
         <Alert variant="info">
-          <Alert.Heading>Your seat number(s) : </Alert.Heading>
+          <Alert.Heading>Your booked seat number(s) : </Alert.Heading>
           <ul className="seat-numbers-list">
             {seatBookedArr.map((seatNumber, index) => (
               <li key={index}>{seatNumber}</li>
@@ -18,7 +18,7 @@ function SeatsBooked({ isBooked, seatsBooked, handleBookAgain }) {
       )}
       {isBooked && (
         <Button variant="outline-success" onClick={handleBookAgain}>
-          Book Again
+          Book Again 
         </Button>
       )}
     </div>
