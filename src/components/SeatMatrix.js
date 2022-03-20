@@ -2,7 +2,6 @@ import React from "react";
 import "../css/seatmatrix.css";
 import {
   RESERVED_SEAT,
-  VACANT_SEAT,
   RESERVED_SEAT_BG_COLOR,
   VACANT_SEAT_BG_COLOR,
 } from "../utils/constants";
@@ -26,7 +25,7 @@ function SeatMatrixUi({ seats }) {
                     : VACANT_SEAT_BG_COLOR,
               }}
             >
-              {i + j + 1}
+              {String(i + 1) + String(j + 1)}
               <br />
               {seat === RESERVED_SEAT ? "Reserved" : "Vacant"}
             </div>
