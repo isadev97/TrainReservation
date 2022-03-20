@@ -76,7 +76,6 @@ function App() {
         }
       }
     }
-    console.log(cloneMatrix)
     setSeats(cloneMatrix);
     setReservedSeats(reservedSeats + parseInt(userInput));
     setVacantSeats(vacantSeats - parseInt(userInput));
