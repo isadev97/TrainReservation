@@ -129,10 +129,13 @@ function App() {
       return;
     } else if (vacantSeats - userInput < 0) {
       if (vacantSeats === 0) {
-        cogoToast.warn("All seats are already booked, Please try again later !", {
-          heading: "Warning",
-          position: "top-right",
-        });
+        cogoToast.warn(
+          "All seats are already booked, Please try again later !",
+          {
+            heading: "Warning",
+            position: "top-right",
+          }
+        );
       } else {
         cogoToast.warn(
           `Only ${vacantSeats} seats are left, Please book your seats accordingly !`,
@@ -142,7 +145,6 @@ function App() {
           }
         );
       }
-
       return;
     } else {
       return allocateSeats();
