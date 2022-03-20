@@ -22,7 +22,6 @@ const fillASeatWithRandomValue = () => {
 This function will return a matrix of seatMatrix already filled with random values that is either reserved or vacant 
 This function will also return the count of reserved seats and vacant seats
 */
-
 export const generateTrainRows = () => {
   const NumberOfrows = Math.floor(TOTAL_SEATS / SEATS_IN_EACH_ROW);
   let reservedSeatCount = 0;
@@ -55,6 +54,9 @@ export const generateTrainRows = () => {
   return [seatMatrix, reservedSeatCount, vacantSeatCount];
 };
 
+/*
+  This function will return a clone of seat matrix
+*/
 export const getCloneMatrix = (currentArray) => {
   var newArray = [];
 
@@ -64,6 +66,9 @@ export const getCloneMatrix = (currentArray) => {
   return newArray;
 };
 
+/*
+  This function will return a count of particular seat type in a particular row
+*/
 export const getCountOfSeatsInARow = (row, val) => {
   return [...row].filter((x) => x === val).length;
 };

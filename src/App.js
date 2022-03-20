@@ -37,7 +37,7 @@ function App() {
     Function to allocate seats in same row
   */
   const allocateSeatsInSameRow = (rowIndex) => {
-    const cloneMatrix = getCloneMatrix(seatMatrix);
+    const cloneMatrix = getCloneMatrix(seats);
     let seatsToBeBooked = userInput;
     let seatNumbers = "";
     for (let j = 0; j < cloneMatrix[rowIndex].length; j++) {
@@ -63,7 +63,7 @@ function App() {
     Function to allocate seats nearby
   */
   const allocateSeatsNearBy = () => {
-    const cloneMatrix = getCloneMatrix(seatMatrix);
+    const cloneMatrix = getCloneMatrix(seats);
     let seatNumbers = "";
     let seatsToBeBooked = userInput;
     for (let i = 0; i < cloneMatrix.length; i++) {
@@ -76,6 +76,7 @@ function App() {
         }
       }
     }
+    console.log(cloneMatrix)
     setSeats(cloneMatrix);
     setReservedSeats(reservedSeats + parseInt(userInput));
     setVacantSeats(vacantSeats - parseInt(userInput));
@@ -91,7 +92,7 @@ function App() {
     Function to allocate seats
   */
   const allocateSeats = () => {
-    const cloneMatrix = getCloneMatrix(seatMatrix);
+    const cloneMatrix = getCloneMatrix(seats);
     for (let i = 0; i < cloneMatrix.length; i++) {
       const row = cloneMatrix[i];
       const countOfVacantSeatsInARow = getCountOfSeatsInARow(row, VACANT_SEAT);
