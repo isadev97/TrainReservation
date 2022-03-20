@@ -128,10 +128,10 @@ function App() {
       );
       return;
     } else if (vacantSeats - userInput < 0) {
-      cogoToast.error(
+      cogoToast.warn(
         `Only ${vacantSeats} seats are left, Please book your seats accordingly`,
         {
-          heading: "Error",
+          heading: "Warning",
           position: "top-right",
         }
       );
